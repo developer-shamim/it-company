@@ -35,7 +35,7 @@ const Header = () => {
                         <br/>
                         <p>We can customize your marketing materials be it branding identity or websites or apps to that level untill you feel statisfied. Customers satisfaction is our ultimate goal. </p>    
                         <br/>
-                        <Link to="">
+                        <Link to="/design">
                         <button className="btn btn-success"> Design Your T-Shirt Now </button> 
                         </Link>         
                     </div>

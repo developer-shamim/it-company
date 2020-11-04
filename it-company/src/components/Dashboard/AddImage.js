@@ -1,5 +1,4 @@
-import React, { Component} from 'react';
-import ReactDOM from "react-dom";
+import React from 'react';
 import ImageUploading from "react-images-uploading";
 import './Images.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';

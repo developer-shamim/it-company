@@ -4,6 +4,7 @@
     text-align: center; 
     background-color: #3464b8;
     background-position: cover;
+    margin-top:10px;
     height: 100%;
     left:0px;
   }
@@ -17,5 +18,43 @@
     margin: 10px;
   }
 
+  .design-area{
+    text-align: center; 
+    background-color: #3464b8;
+    background-position: cover;
+  }
+
+  .t-shart{
+    position: relative;
+    z-index: 0;
+    height: 50%;
+    width: 50%;
+  }
   
-  
+  .t-shirt-text{
+    border: 1px solid goldenrod;
+    width: 220px;
+    height: 220px;
+    padding-top: 60px;
+    position: absolute;
+    z-index: 0;
+    font-size: 10vh;
+    margin-top: -420px;
+    margin-left: 440px;
+  }
+
+  .modal{
+    z-index: 999;
+  }
+
+  .left-button{
+    float: left;
+    left: 25px;
+    margin-top: 250px;
+  }
+
+  .right-button{
+    float: right;
+    right: 25px;
+    margin-top: 250px;
+  }
