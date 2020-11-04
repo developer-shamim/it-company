@@ -1,0 +1,36 @@
+.background{
+    background-image: url("/src/images/bg.jpg");  
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    margin-left: 0px;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-success{
+    border-radius: 5px;
+    width: 80px;
+}
+
+.navbar-brand{
+    height: 60px;
+    width: 150px;
+}
+
+.banner-text{
+    top:120px;
+}
+
+h1{
+    color: tomato;
+}
+p{
+    color: black;
+}
+.img-fluid{
+    width: 75%;
+    height: 80%;
+}
