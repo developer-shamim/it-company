@@ -3,11 +3,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  
 } from "react-router-dom";
 import AddImage from './components/Dashboard/AddImage';
 import Home from './components/Home/Home/Home';
 import DesignTshirt from './components/Dashboard/DesignTshirt';
+
 
 function App() {
   return (
@@ -35,9 +35,7 @@ function App() {
         </Route>
 
         </Switch>
-      </Router>
-      
-      
+      </Router> 
     </div>
   );
 }

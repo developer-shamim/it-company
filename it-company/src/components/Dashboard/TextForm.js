@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Modal from 'react-modal';
 const customStyles = {
@@ -14,9 +14,17 @@ const customStyles = {
 
   Modal.setAppElement('#root')
 
-const TextForm = ({modalIsOpen, afterOpenModal, closeModal}) => {
-    const { register, handleSubmit, errors } = useForm();
-    const onSubmit = data => console.log(data);
+const TextForm = ({addText, modalIsOpen, afterOpenModal, closeModal}) => {
+    const [text, setText] = useState('');
+
+    const { register, errors } = useForm();
+    
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      addText(text)
+    }
+
+  
     return (
         <div className="modal">
             
@@ -30,16 +38,13 @@ const TextForm = ({modalIsOpen, afterOpenModal, closeModal}) => {
  
           <h2 className="text-brand text-center text-success">Add text on T-shirt</h2>
             <br/>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit}>
          
-            <input name="exampleRequired"  className="form-control" placeholder="Write your text here" ref={register({ required: true })} />
+            <input type="text" name="mainText" className="form-control" placeholder="Write your text here" value={text} ref={register({ required: true })} onChange ={(e) => setText(e.target.value)} />
             {errors.age && <span className="text-danger">This field is required</span>}
             <br/>
-
-            <input name="example" className="form-control"  ref={register} placeholder="Optional sub-text"/>
-            <br/>
     
-            <input className="btn btn-success w-100" type="submit" />
+            <input className="btn btn-success w-100" type="submit" value="Submut"/>
             <br/>
             </form>
             <br/>

@@ -18,7 +18,7 @@ const Header = () => {
                     <div className="navbar-nav ml-auto">
                     <Link to="/home" className="nav-link active mr-5" >Home <span className="sr-only">(current)</span></Link>
                     <Link to="/" className="nav-link mr-5" >About</Link>
-                    <Link to="/" className="nav-link mr-5" >Our portfolio</Link>
+                    <a className="nav-link mr-5" href="https://developer-shamim.github.io/e-portfolio/" >Our portfolio</a>
                     <Link to="/"className="nav-link mr-5" href="/#">Our Teams</Link>
                     <Link to="/" className="nav-link mr-5" href="/#">Contact Us</Link>
                     <button class="btn btn-success">
