@@ -4,7 +4,7 @@
     text-align: center; 
     background-color: #3464b8;
     background-position: cover;
-    height: 100%;
+    height: 100vh;
     left:0px;
   }
   .image-item {
@@ -17,7 +17,6 @@
     margin: 10px;
   }
 
-
   .design-area{
     text-align: center; 
     background-color: #3464b8;
@@ -27,49 +26,39 @@
   .t-shart{
     position: relative;
     z-index: 0;
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 35%;
   }
   
-  .t-shirt-text{
-    border: 1px solid goldenrod;
-    width: 220px;
-    height: 220px;
-    padding-top: 60px;
-    position: absolute;
-    z-index: 0;
-    font-size: 10vh;
-    margin-top: -420px;
-    margin-left: 440px;
-  }
-
-  .modal{
+    .modal{
     z-index: 999;
   }
 
   .left-button{
+    position: absolute;
     float: left;
     left: 25px;
-    margin-top: 250px;
   }
 
   .right-button{
+    position: absolute;
     float: right;
     right: 25px;
-    margin-top: 250px;
+   
   }
 
   .card {
-    display: flex;
+    position: relative;
+    border-style: none!important;
     align-items: center;
     justify-content: center;
     color: red;
-    background-color: transparent;
-    font-size: 28px;
+    background-color: transparent!important;
+    font-size: 5vh;
     font-family: "Arial", sans-serif;
-    font-weight: 900;
-    width: 200px;
-    height: 100px;
+    font-weight: bold;
+    height: 10vh;
+    width:  29vh;
     margin: 5px;
   }
  

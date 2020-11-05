@@ -38,17 +38,19 @@ const DesignTshirt = () => {
         }
 
         function habndleMoveLeft () {
-            alert ("Arrow right yet to be activated...Please use drag and drop instead!")
+            alert ("Arrow left move yet to be activated...Please use drag and drop instead!")
         }
 
        function habndleMoveRight () {
-            alert ("Arrow right yet to be activated...Please use drag and drop instead!")
+            alert ("Arrow right move yet to be activated...Please use drag and drop instead!")
         }
 
     return (
-        <div className="container design-area" >
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-        <Link to="/" className="navbar-brand" >Navbar</Link>
+        <div className="container-fluid design-area" >
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+                <Link to="/home">
+                    <img src="/images/logo.png" className="navbar-brand" ></img>
+                </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -59,18 +61,13 @@ const DesignTshirt = () => {
           </div>
         </div>
       </nav>
-            <img className="t-shart mt-4 mb-2" src={tshirt} alt="" />
-
+            <img className="t-shart mt-2" src={tshirt} alt="" />
             <div className="t-shirt-text">
-               <DraggableCard key={type.id}>{type.text}</DraggableCard>
-                
+               <DraggableCard key={type.id}>{type.text}</DraggableCard>   
             </div>
-
             <div className="left-button">
                 <button className="btn btn-success" onClick={habndleMoveLeft} > Move Left</button>
             </div>
-
-            
             <div className="right-button">
                 <button className="btn btn-success" onClick={habndleMoveRight}> Move Right </button>
             </div>
